@@ -1,0 +1,29 @@
+.page_homepage{
+    .sliderBar  {
+        @extend %baseBar;
+        .widget{
+
+        }
+
+    }
+    .featureBar {
+        @extend %baseBar;
+        .widgetWrapper{
+            .widget{
+
+            }
+        }
+    }
+    .aboutBar   {
+        @extend %baseBar;
+        .widget{
+
+        }
+    }
+    .actionBar  {
+        @extend %baseBar;
+        .actionWidgetLeft,.actionWidt{
+
+        }
+    }
+}

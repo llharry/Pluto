@@ -1,0 +1,11 @@
+.headerBar{
+    background-color: $P_HEADER_BACKGROUND;
+    .menuBar{
+        background-color: $P_MENU_BACKGROUND;
+        //see vendor/_ubermenu-mainMenu.scss
+    }
+    img{
+        max-height:100px;
+        width: auto;
+    }
+}

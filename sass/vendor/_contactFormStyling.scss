@@ -1,0 +1,73 @@
+.wpcf7-form{
+    .sidebarContactForm{
+        p{
+            padding: 6px 12px;
+        }
+        .wpcf7-form-control-wrap{
+            input, textarea{
+                @include transition(0.5s);
+                width: 100%;
+                font-family: $F_DEFAULT_BODY;
+                font-size: 11pt;
+                padding: 6px 12px;
+                color: $P_BODY_BACKGROUND;
+                border: $P_BODY_HTEXT 2px solid;
+                &:hover{
+                    border: transparent 2px solid;
+                }
+            }
+            input{
+                height: 48px;
+            }
+
+            textarea{
+                resize: none;
+                max-height: 150px;
+            }
+        }
+        .wpcf7-submit{
+            width: 40%;
+            margin-left: 30%;
+        }
+        @include rlevel(small) {
+            .wpcf7-submit{
+                padding: 40px;
+            }
+        }
+    }
+    .homepageContactForm{
+        @extend .sidebarContactForm;
+        .wpcf7-form-control-wrap{
+            input, textarea{
+
+            }
+            input{
+            }
+
+            textarea{
+            }
+        }
+        .wpcf7-submit{
+        }
+    }
+    .wpcf7-response-output{
+        text-align: center;
+        font-weight: bold;
+        padding: 12px;
+    }
+    .wpcf7-validation-errors{
+        $col: #c76300;
+        border: none;
+        border-top: $col 2px solid;
+        border-bottom: $col 2px solid;
+        color: lighten($col,30%);
+    }
+    .wpcf7-mail-sent-ok{
+        $col: #398f14;
+        border: none;
+        border-top: $col 2px solid;
+        border-bottom: $col 2px solid;
+        color: lighten($col,30%);
+    }
+
+}

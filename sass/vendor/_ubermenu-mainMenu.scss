@@ -1,0 +1,22 @@
+.menuBar{
+    background-color: $P_HEADER_BACKGROUND;
+    #ubermenu-main-2-main-menu{
+        box-shadow: none;
+        background: none;
+        border: none;
+        ul{
+            li{
+                a{
+                    color: $P_HEADER_TEXT;
+                    background: none;
+                    box-shadow: none;
+                    border: none;
+                    @include transition(0.5s);
+                    &:hover{
+                        color: $P_HEADER_HTEXT;
+                    }
+                }
+            }
+        }
+    }
+}

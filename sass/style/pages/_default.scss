@@ -1,0 +1,38 @@
+.page_default{
+    background-color: $P_BODY_BACKGROUND;
+
+    .titleBar{
+        padding: 6px 0;
+        background-color: $P_BODY_HBACKGROUND;
+        color: $P_BODY_HTEXT;
+    }
+    .pageContent{
+        padding: 6px 0;
+    }
+    .pageSidebar{
+        padding: 12px 0;
+    }
+    .pricingBlock{
+        .pricingWrapper{
+            padding: 12px;
+            .pricingWidget{
+                padding: 12px;
+                color: #fff;
+                background-color: darken($P_BODY_HTEXT, 20%);
+                text-align: center;;
+                border-radius: 10px;
+                min-height: 320px;
+                box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+                @include rlevel(medium){
+                    min-height: 200px;
+                }
+                @include rlevel(small){
+                    min-height: 200px;
+                }
+                p:nth-child(1){
+                    font-size: 10pt;
+                }
+            }
+        }
+    }
+}

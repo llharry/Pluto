@@ -1,0 +1,22 @@
+%button{
+    padding: 6px 12px;
+    font-weight: bold;
+    @include transition(0.5s);
+    cursor: pointer;
+    font-size: 11pt;
+}
+.button-transparent{
+    @extend %button;
+    border: $P_BUTTON_BORDER 2px solid;
+    color:$P_BUTTON_TEXT;
+    background-color: transparent;
+    &:hover{
+        color: $P_BUTTON_HTEXT;
+        border-color: $P_BUTTON_HBORDER;
+        background-color: transparentize($P_BUTTON_HBACKGROUND, 0.8);
+    }
+}
+.button-submit{
+    @extend .button-transparent;
+    max-width: 40%;
+}

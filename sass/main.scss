@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+
+CORE
+
+*/
+@import "core/grids";
+@import "core/responsiveImages.scss";
+@import "core/palette";
+@import "core/fonts";
+@import "core/misc";
+@import "core/typoReset";
+/*
+
+INTERACTION
+
+*/
+@import "interaction/animation";
+@import "interaction/buttons";
+
+
+/*
+
+VENDOR
+
+*/
+@import "vendor/ubermenuReset";
+@import "vendor/ubermenu-mainMenu";
+
+/*
+
+STYLE
+
+*/
+
+@import "style/bars";
+@import "style/typography";
+
+
+//Pages
+@import "style/pages/homepage";
+@import "style/pages/default";
+
+//Sections
+@import "style/sections/header";
+@import "style/sections/footer";
+
+body{
+    background-color: $P_FOOTER_BACKGROUND;
+    margin: 0;
+}
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+
+/*
+//# sourceMappingURL=main.css.map
+*/

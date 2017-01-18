@@ -1,0 +1,192 @@
+
+//<thanks> TO Hugo Giraudel.
+$breakpoints: (
+  'small'  : ( max-width:  767px ),
+  'medium' : ( max-width:  992px ),
+  'large'  : ( max-width: 1200px ),
+  'huge'   : ( max-width: 2000px ),
+  'max'    : ( min-width: 2001px )
+);
+
+@mixin rlevel($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+//</thanks>
+
+%defaultWidth{
+    float: left;
+}
+.hide{
+    display: none;
+}
+.siteWidth  {margin-left: auto; margin-right: auto; width:1100px;}
+.widthInsideSmall{
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.widthInside{
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.widthInsideBig{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.siteWidthLeft{
+    float: right;
+}
+.siteWidthRight{
+    float: left;
+}
+
+.width1     {@extend %defaultWidth;  width:100%     }
+.width2     {@extend %defaultWidth;  width:50%      }
+.width3     {@extend %defaultWidth;  width:33.333%  }
+.width3_2   {@extend %defaultWidth;  width:66.666%  }
+.width4     {@extend %defaultWidth;  width:25%      }
+.width4_3   {@extend %defaultWidth;  width:75%      }
+.width5     {@extend %defaultWidth;  width:20%      }
+.width5_2   {@extend %defaultWidth;  width:40%      }
+.width5_3   {@extend %defaultWidth;  width:60%      }
+.width5_4   {@extend %defaultWidth;  width:80%      }
+.width6     {@extend %defaultWidth;  width:16.666%  }
+.width8     {@extend %defaultWidth;  width:12.5%    }
+.width10    {@extend %defaultWidth;  width:10%      }
+.width12    {@extend %defaultWidth;  width:8.333%   }
+
+@include rlevel(max)    {
+    .siteWidth  {margin-left: auto; margin-right: auto; width:1800px;}
+    .widthInside{}
+    .widthInsideBig{}
+    .siteWidthLeft{width: 900px;}
+    .siteWidthRight{width: 900px;}
+
+    .width1   {width:100%     }
+    .width2   {width:50%      }
+    .width3   {width:33.333%  }
+    .width3_2 {width:66.666%  }
+    .width4   {width:25%      }
+    .width4_3 {width:75%      }
+    .width5   {width:20%      }
+    .width5_2 {width:40%      }
+    .width5_3 {width:60%      }
+    .width5_4 {width:80%      }
+    .width6   {width:16.666%  }
+    .width8   {width:12.5%    }
+    .width10  {width:10%      }
+    .width12  {width:8.333%   }
+}
+
+@include rlevel(huge)   {
+    .siteWidth{width: 1200px;}
+    .widthInside{}
+    .widthInsideBig{}
+    .siteWidthLeft{width: 600px;}
+    .siteWidthRight{width: 600px;}
+
+    .width1   {width:100%     }
+    .width2   {width:50%      }
+    .width3   {width:33.333%  }
+    .width3_2 {width:66.666%  }
+    .width4   {width:25%      }
+    .width4_3 {width:75%      }
+    .width5   {width:20%      }
+    .width5_2 {width:40%      }
+    .width5_3 {width:60%      }
+    .width5_4 {width:80%      }
+    .width6   {width:16.666%  }
+    .width8   {width:12.5%    }
+    .width10  {width:10%      }
+    .width12  {width:8.333%   }
+}
+@include rlevel(large)  {
+    .siteWidth{width: 990px;}
+    .widthInside{}
+    .widthInsideBig{}
+    .siteWidthLeft{width: 495px;}
+    .siteWidthRight{width: 495px;}
+
+    .width1   {width:100%     }
+    .width2   {width:50%      }
+    .width3   {width:33.333%  }
+    .width3_2 {width:66.666%  }
+    .width4   {width:25%      }
+    .width4_3 {width:75%      }
+    .width5   {width:20%      }
+    .width5_2 {width:40%      }
+    .width5_3 {width:60%      }
+    .width5_4 {width:80%      }
+    .width6   {width:33.333%  }
+    .width8   {width:25%      }
+    .width10  {width:20%      }
+    .width12  {width:33.333%  }
+}
+@include rlevel(medium) {
+    .siteWidth{width: 760px;}
+    .widthInside{}
+    .widthInsideBig{}
+    .siteWidthLeft{width: 380px;}
+    .siteWidthRight{width: 380px;}
+
+    .width1   {width:100%     }
+    .width2   {width:50%      }
+    .width3   {width:100%     }
+    .width3_2 {width:100%     }
+    .width4   {width:50%      }
+    .width4_3 {width:75%      }
+    .width5   {width:20%      }
+    .width5_2 {width:40%      }
+    .width5_3 {width:60%      }
+    .width5_4 {width:80%      }
+    .width6   {width:100%     }
+    .width8   {width:50%      }
+    .width10  {width:50%      }
+    .width12  {width:100%     }
+}
+@include rlevel(small)  {
+    .siteWidth{width: 100%;}
+    .widthInsideSmall{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .widthInside{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .widthInsideBig{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .siteWidthLeft{width: 50%;}
+    .siteWidthRight{width: 50%;}
+
+    .width1   {width:100%;}
+    .width2   {width:100%;}
+    .width3   {width:100%;}
+    .width3_2 {width:100%;}
+    .width4   {width:100%;}
+    .width4_3 {width:100%;}
+    .width5   {width:100%;}
+    .width5_2 {width:100%;}
+    .width5_3 {width:100%;}
+    .width5_4 {width:100%;}
+    .width6   {width:100%;}
+    .width8   {width:100%;}
+    .width10  {width:100%;}
+    .width12  {width:100%;}
+}

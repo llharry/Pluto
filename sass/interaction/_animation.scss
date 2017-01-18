@@ -1,0 +1,13 @@
+@mixin transition($duration){
+    transition: all $duration ease 0s;
+    -moz-transition: all $duration ease 0s;
+    -webkit-transition: all $duration ease 0s;
+}
+
+@mixin fixedBg {
+    background-attachment: fixed;
+    background-size: cover;
+    @include rlevel(small){
+        background-attachment: scroll;
+    }
+}
