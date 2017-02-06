@@ -11,3 +11,10 @@
         background-attachment: scroll;
     }
 }
+
+@mixin zoomContainer{
+    overflow: hidden;
+}
+@mixin zoomItem:hover{
+    transform: scale(1.15);
+}

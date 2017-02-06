@@ -19,7 +19,7 @@
 
   <?php //CDN STUFF ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js">
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
   <?php //Contained stuff ?>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>

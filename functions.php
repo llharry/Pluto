@@ -38,7 +38,7 @@ function arphabet_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => 'Page Sidebar',
-		'id'            => 'page-sidebar',
+		'id'            => 'page_sidebar',
 		'description'   => 'Appears as a sidebar on most pages',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
