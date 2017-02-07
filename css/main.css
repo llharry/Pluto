@@ -294,6 +294,146 @@ img {
 a {
   text-decoration: none; }
 
+@media (max-width: 550px) {
+  .hide-smaller-small {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-smaller-medium {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-smaller-medium {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-smaller-large {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-smaller-large {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-smaller-large {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-smaller-huge {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-smaller-huge {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-smaller-huge {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-smaller-huge {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-smaller-max {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-smaller-max {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-smaller-max {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-smaller-max {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-smaller-max {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-larger-small {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-larger-small {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-larger-small {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-larger-small {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-larger-small {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-larger-medium {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-larger-medium {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-larger-medium {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-larger-medium {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-larger-large {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-larger-large {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-larger-large {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-larger-huge {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-larger-huge {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-larger-max {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .hide-at-small {
+    display: none; } }
+
+@media (max-width: 992px) {
+  .hide-at-medium {
+    display: none; } }
+
+@media (max-width: 1600px) {
+  .hide-at-large {
+    display: none; } }
+
+@media (max-width: 2200px) {
+  .hide-at-huge {
+    display: none; } }
+
+@media (min-width: 2201px) {
+  .hide-at-max {
+    display: none; } }
+
 /*
 
 INTERACTION
