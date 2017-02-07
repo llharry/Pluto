@@ -53,6 +53,54 @@ body{
     background-color: $P_FOOTER_BACKGROUND;
     margin: 0;
 }
+
+$DEBUG: true !default;
+
+.debugHeader{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.4;
+
+    p{
+        font-weight: bolder;
+        padding: 0;
+        margin: 0;
+    }
+
+    @if $DEBUG{
+        display: block;
+    }@else{
+        display: none;
+    }
+    span{
+        display: inline-block;
+    }
+
+    #dbg-responsive-level{
+        color: red;
+        @include rlevel(max)    {p:after{content: "max"}}
+        @include rlevel(huge)   {p:after{content: "huge"}}
+        @include rlevel(large)  {p:after{content: "large"}}
+        @include rlevel(medium) {p:after{content: "medium"}}
+        @include rlevel(small)  {p:after{content: "small"}}
+
+
+
+    }
+}
+@if $DEBUG{
+    body{
+        margin-bottom: 20px;
+    }
+}
+
+
+
 /*
 * {
   background: #000 !important;

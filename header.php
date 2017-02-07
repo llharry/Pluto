@@ -39,6 +39,10 @@
 
 </head>
 <body <?php body_class(); ?>>
+    <div class="debugHeader">
+        <span><p>Responsive level:</p></span>
+        <span id="dbg-responsive-level"><p></p></span>
+    </div>
 	<div class="headerBar width1">
 		<div class="siteWidth">
 			<div class="width1">
