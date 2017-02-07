@@ -39,8 +39,26 @@
 
 </head>
 <body <?php body_class(); ?>>
+    <div class="parallax">
+        <div class="parallax-group">
+            <div class="main">
+                <h1>main</h1>
+            </div>
+            <div class="back">
+                <h1>ayy</h1>
+            </div>
+        </div>
+        <div class="parallax-group">
+            <div class="main">
+                <h1>main</h1>
+            </div>
+            <div class="back">
+                <h1>ayy</h1>
+            </div>
+        </div>
+    </div>
     <div class="debugHeader">
-        <span><p>Responsive level:</p></span>
+        <span><p style="padding: 0;">Responsive level:</p></span>
         <span id="dbg-responsive-level"><p></p></span>
     </div>
 	<div class="headerBar width1">

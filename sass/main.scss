@@ -58,9 +58,9 @@ $DEBUG: true !default;
 
 .debugHeader{
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    height: 40px;
+    height: 50px;
     padding: 10px 5px;
     background-color: #fff;
     color: #000;
@@ -68,7 +68,7 @@ $DEBUG: true !default;
 
     p{
         font-weight: bolder;
-        padding: 0;
+        padding: 0 12px;
         margin: 0;
     }
 
@@ -82,13 +82,16 @@ $DEBUG: true !default;
     }
 
     #dbg-responsive-level{
+
         color: red;
         @include rlevel(max)    {p:after{content: "max"}}
         @include rlevel(huge)   {p:after{content: "huge"}}
         @include rlevel(large)  {p:after{content: "large"}}
         @include rlevel(medium) {p:after{content: "medium"}}
         @include rlevel(small)  {p:after{content: "small"}}
-
+        p{
+            padding: 0;
+        }
 
 
     }

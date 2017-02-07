@@ -9,8 +9,16 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
+    <div class="parallax">
+        <div class="main">
+            <h1>HIII</h1>
+        </div>
+        <div class="back">
+            <h1>I'm further back!</h1>
+        </div>
+    </div>
 <div class="page page_homepage width1">
+
     <div class="sliderBar">
         <div class="siteWidth">
             <div class="widget">

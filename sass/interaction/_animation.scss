@@ -1,7 +1,7 @@
-@mixin transition($duration){
-    transition: all $duration ease 0s;
-    -moz-transition: all $duration ease 0s;
-    -webkit-transition: all $duration ease 0s;
+@mixin transition($duration, $type: all){
+    transition: $type $duration ease 0s;
+    -moz-transition: $type $duration ease 0s;
+    -webkit-transition: $type $duration ease 0s;
 }
 
 @mixin fixedBg {
@@ -18,5 +18,71 @@
 @mixin zoomItem{
     &:hover{
         transform: scale(1.15);
+    }
+}
+
+
+//PARALLAX
+/*
+    Thanks to Keith Clark for the intial ideas and guides!
+    http://keithclark.co.uk/articles/pure-css-parallax-websites/
+ */
+
+/**
+ * Usage
+ * add parallax-Block to div
+ *
+ * add parallax layer to divs inside the parallax block.
+ * (or use the defaults of .main and .back)
+ *
+ * change the Z translantion of the layers for faster and slower movement:
+ *  LOWER Z = Slower
+ *  HIGHER Z = Faster
+ *  (Closer and further from camera)
+ *
+ *
+ * FOR GROUPS:
+ * make a par_group div and add the group mixin, put your par_layers inside it. ez.
+ */
+
+
+
+@mixin parallax-layer ($z-translation,$perspective){
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ($z-translation);
+    transform: scale(1 + ($z-translation * -1) / $perspective); //Depth correction. Stuff further from the camera needs to be bigger!
+}
+
+@mixin parallax-group{
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+@mixin parallax-block($perspective){
+    perspective: $perspective;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+}
+
+//eg
+.parallax{
+    $perspective: 1px;
+    @include parallax-block($perspective);
+    .parallax-group{
+        @include parallax-group;
+        .main{
+            @include parallax-layer(0,$perspective);
+        }
+        .back{
+            @include parallax-layer(1px,$perspective);
+        }
     }
 }

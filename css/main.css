@@ -299,6 +299,52 @@ a {
 INTERACTION
 
 */
+/*
+    Thanks to Keith Clark for the intial ideas and guides!
+    http://keithclark.co.uk/articles/pure-css-parallax-websites/
+ */
+/**
+ * Usage
+ * add parallax-Block to div
+ *
+ * add parallax layer to divs inside the parallax block.
+ * (or use the defaults of .main and .back)
+ *
+ * change the Z translantion of the layers for faster and slower movement:
+ *  LOWER Z = Slower
+ *  HIGHER Z = Faster
+ *  (Closer and further from camera)
+ *
+ *
+ * FOR GROUPS:
+ * make a par_group div and add the group mixin, put your par_layers inside it. ez.
+ */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .parallax .parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d; }
+    .parallax .parallax-group .main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateZ(0);
+      transform: scale(1/px); }
+    .parallax .parallax-group .back {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateZ(1px);
+      transform: scale(0); }
+
 .button-transparent, .button-submit {
   padding: 6px 12px;
   font-weight: bold;
@@ -529,9 +575,9 @@ body {
 
 .debugHeader {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  height: 40px;
+  height: 50px;
   padding: 10px 5px;
   background-color: #fff;
   color: #000;
@@ -539,7 +585,7 @@ body {
   display: block; }
   .debugHeader p {
     font-weight: bolder;
-    padding: 0;
+    padding: 0 12px;
     margin: 0; }
   .debugHeader span {
     display: inline-block; }
@@ -560,6 +606,8 @@ body {
     @media (max-width: 550px) {
       .debugHeader #dbg-responsive-level p:after {
         content: "small"; } }
+    .debugHeader #dbg-responsive-level p {
+      padding: 0; }
 
 body {
   margin-bottom: 20px; }

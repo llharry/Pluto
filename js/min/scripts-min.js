@@ -1,0 +1,1 @@
+function toggleParallaxDebug(){on?on=!1:(on=!0,$(".parallax").css("transform","translate3d(700px, 0, -800px) rotateY(30deg);"))}var on=!1;
