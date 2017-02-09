@@ -1,3 +1,4 @@
+//Responsive hiding
 .hide-smaller-small     {
     @include rlevel(small)   {display: none;};
 }

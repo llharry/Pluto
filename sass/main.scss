@@ -7,13 +7,14 @@
 CORE
 
 */
+@import "core/functions";
 @import "core/grids";
 @import "core/responsiveImages.scss";
 @import "core/palette";
 @import "core/fonts";
 @import "core/misc";
 @import "core/typoReset";
-@import "core/_hiding";
+@import "core/hiding";
 /*
 
 INTERACTION
@@ -32,6 +33,7 @@ VENDOR
 @import "vendor/ubermenu-mainMenu";
 @import "vendor/contactFormReset";
 @import "vendor/contactFormStyling";
+@import "vendor/parallax-sass";
 /*
 
 STYLE
@@ -43,8 +45,9 @@ STYLE
 
 
 //Pages
-@import "style/pages/homepage";
 @import "style/pages/default";
+@import "style/pages/homepage";
+@import "style/pages/homepage-para";
 
 //Sections
 @import "style/sections/header";
@@ -56,6 +59,7 @@ body{
 }
 
 $DEBUG: true !default;
+$DEBUG_PARA: true !default;
 
 .debugHeader{
     width: 100%;
@@ -66,7 +70,7 @@ $DEBUG: true !default;
     background-color: #fff;
     color: #000;
     opacity: 0.4;
-
+    z-index: 99999;
     p{
         font-weight: bolder;
         padding: 0 12px;
@@ -95,11 +99,6 @@ $DEBUG: true !default;
         }
 
 
-    }
-}
-@if $DEBUG{
-    body{
-        margin-bottom: 20px;
     }
 }
 

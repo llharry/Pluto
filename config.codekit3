@@ -25,6 +25,12 @@
 		"oAP": "\/css\/main.css.map",
 		"oF": 0
 		},
+	"\/footer-blank.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/footer-blank.php",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -35,6 +41,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/functions.php",
+		"oF": 0
+		},
+	"\/header-blank.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header-blank.php",
 		"oF": 0
 		},
 	"\/header.php": {
@@ -78,6 +90,196 @@
 		"iS": 188867,
 		"oA": 0,
 		"oAP": "\/imgs\/logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/asanoha-400px.png": {
+		"ft": 32768,
+		"iS": 16366,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/asanoha-400px.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/black_lozenge.png": {
+		"ft": 32768,
+		"iS": 15517,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/black_lozenge.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/black_lozenge_@2X.png": {
+		"ft": 32768,
+		"iS": 15742,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/black_lozenge_@2X.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/bo_play_pattern.png": {
+		"ft": 32768,
+		"iS": 1182,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/bo_play_pattern.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/bo_play_pattern_@2X.png": {
+		"ft": 32768,
+		"iS": 4386,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/bo_play_pattern_@2X.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/concrete_seamless.png": {
+		"ft": 32768,
+		"iS": 81227,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/concrete_seamless.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/congruent_outline.png": {
+		"ft": 32768,
+		"iS": 8425,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/congruent_outline.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/contemporary_china.png": {
+		"ft": 32768,
+		"iS": 9709,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/contemporary_china.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/contemporary_china_2.png": {
+		"ft": 32768,
+		"iS": 7101,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/contemporary_china_2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/cork-wallet.png": {
+		"ft": 32768,
+		"iS": 44191,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/cork-wallet.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/eight_horns.png": {
+		"ft": 32768,
+		"iS": 2493,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/eight_horns.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/ep_naturalwhite.png": {
+		"ft": 32768,
+		"iS": 286902,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/ep_naturalwhite.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/footer_lodyas.png": {
+		"ft": 32768,
+		"iS": 33702,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/footer_lodyas.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/patterns\/readme.txt",
+		"oF": 0
+		},
+	"\/imgs\/patterns\/sayagata-400px.png": {
+		"ft": 32768,
+		"iS": 17147,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/sayagata-400px.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/seigaiha.png": {
+		"ft": 32768,
+		"iS": 39522,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/seigaiha.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/stardust.png": {
+		"ft": 32768,
+		"iS": 9106,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/stardust.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/stardust_@2X.png": {
+		"ft": 32768,
+		"iS": 9106,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/stardust_@2X.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/subtle_carbon.png": {
+		"ft": 32768,
+		"iS": 14593,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/subtle_carbon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/subtle_carbon_@2X.png": {
+		"ft": 32768,
+		"iS": 15320,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/subtle_carbon_@2X.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/twinkle_twinkle.png": {
+		"ft": 32768,
+		"iS": 9882,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/twinkle_twinkle.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/twinkle_twinkle_@2X.png": {
+		"ft": 32768,
+		"iS": 15158,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/twinkle_twinkle_@2X.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/zwartevilt.png": {
+		"ft": 32768,
+		"iS": 56599,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/zwartevilt.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/patterns\/zwartevilt_@2X.jpg": {
+		"ft": 16384,
+		"iS": 147365,
+		"oA": 0,
+		"oAP": "\/imgs\/patterns\/zwartevilt_@2X.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -263,6 +465,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/core\/_functions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_functions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/core\/_grids.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -419,6 +634,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/style\/pages\/_homepage-para.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/style\/css\/_homepage-para.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/style\/pages\/_homepage.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -484,6 +712,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/vendor\/_parallax-sass.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_parallax-sass.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/vendor\/_ubermenu-mainMenu.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -542,6 +783,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/templates\/fullwidth.php",
+		"oF": 0
+		},
+	"\/templates\/homepage-para.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/templates\/homepage-para.php",
 		"oF": 0
 		},
 	"\/templates\/homepage.php": {

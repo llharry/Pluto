@@ -53,8 +53,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ($z-translation);
-    transform: scale(1 + ($z-translation * -1) / $perspective); //Depth correction. Stuff further from the camera needs to be bigger!
+    transform: translateZ($z-translation) scale(strip-units(1 + ($z-translation * -1) / strip-units($perspective))); //Depth correction. Stuff further from the camera needs to be bigger!
 }
 
 @mixin parallax-group{
@@ -73,16 +72,17 @@
 }
 
 //eg
-.parallax{
-    $perspective: 1px;
-    @include parallax-block($perspective);
-    .parallax-group{
-        @include parallax-group;
-        .main{
-            @include parallax-layer(0,$perspective);
-        }
-        .back{
-            @include parallax-layer(1px,$perspective);
-        }
-    }
-}
+
+//.parallax{
+//    $perspective: 1px;
+//    @include parallax-block($perspective);
+//    .parallax-group{
+//        @include parallax-group;
+//        .main{
+//            @include parallax-layer(0,$perspective);
+//        }
+//        .back{
+//            @include parallax-layer(1px,$perspective);
+//        }
+//    }
+//}
