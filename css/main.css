@@ -459,32 +459,6 @@ INTERACTION
  * FOR GROUPS:
  * make a par_group div and add the group mixin, put your par_layers inside it. ez.
  */
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto; }
-  .parallax .parallax-group {
-    position: relative;
-    height: 100vh;
-    transform-style: preserve-3d; }
-    .parallax .parallax-group .main {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transform: translateZ(0);
-      transform: scale(1/px); }
-    .parallax .parallax-group .back {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      transform: translateZ(1px);
-      transform: scale(0); }
-
 .button-transparent, .button-submit {
   padding: 6px 12px;
   font-weight: bold;
@@ -694,6 +668,39 @@ a {
       .page_default .pricingBlock .pricingWrapper .pricingWidget p:nth-child(1) {
         font-size: 10pt; }
 
+.fullScreen {
+  width: 100vw;
+  height: 100vh; }
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .parallax .parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d; }
+    .parallax .parallax-group .main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateZ(0) scale(1); }
+    .parallax .parallax-group .back {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateZ(-0.05px) scale(1.05); }
+  .parallax .maincontent {
+    float: left;
+    width: 100%; }
+    .parallax .maincontent .widget {
+      height: 300vh; }
+
 .headerBar {
   background-color: #111; }
   .headerBar .menuBar {
@@ -722,6 +729,7 @@ body {
   background-color: #fff;
   color: #000;
   opacity: 0.4;
+  z-index: 99999;
   display: block; }
   .debugHeader p {
     font-weight: bolder;
@@ -748,9 +756,6 @@ body {
         content: "small"; } }
     .debugHeader #dbg-responsive-level p {
       padding: 0; }
-
-body {
-  margin-bottom: 20px; }
 
 /*
 * {

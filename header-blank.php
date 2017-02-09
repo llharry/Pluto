@@ -43,17 +43,3 @@
         <span><p style="padding: 0;">Responsive level:</p></span>
         <span id="dbg-responsive-level"><p></p></span>
     </div>
-	<div class="headerBar width1">
-		<div class="siteWidth">
-			<div class="width1">
-				<a href="<?php echo get_site_url(); ?>">
-					<img class="headerImage" src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/logo.png"/>
-				</a>
-			</div>
-        </div>
-        <div class="width1 menuBar">
-            <div class="siteWidth">
-                <?php ubermenu( 'main' , array( 'theme_location' => 'main-menu' ) ); ?>
-            </div>
-        </div>
-	</div>
